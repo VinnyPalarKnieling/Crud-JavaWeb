@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CADASTRO DE PRODUTOS</title>
+<style>
+	@font-face{
+		font-family: Londrina Shadow;
+		src: url('Londrina Shadow.ttf');
+	}
+	.fonte-externa {
+		font-family: Londrina Shadow;
+	}
+
+	html body{
+		background-color: black;
+		color: #7FFF00;
+	}
+	body div{
+		display: flex;
+	    width: 90%;
+	    height: 123px;
+	    margin: 0 auto;
+	    border: 2px dashed black;
+	}
+	div .fc{
+    	margin: 0 auto; 
+	}
+	h1{
+		margin: 20px 310px;
+		color: white;
+		text-align: center;
+		font-size: 70px;
+		position: absolute;
+		}
+	h5{
+		text-align: left;
+		}
+	input[type=text]{
+		border-radius: 6px;
+		background-color: lightblue;
+	    padding: 6px 20px;
+	    margin: 10px 0px;
+	    width: 200px;
+	    font-size: 20px;
+		}
+	input[type=submit]{
+		border-radius: 6px;
+		padding: 5px 15px;
+		font-size: 20px;
+		align-items: center;
+		position: absolute;
+		margin-left: 9%;
+		margin-top: 7px;
+		background-color: #191970;
+		color: white;
+	}
+	form{
+		margin: 60px auto;
+		position: absolute;
+		margin-left: 480px;
+	}
+	th{
+		color: white;
+	}
+	table{
+		color: #7FFF00;
+		border-color: white;
+	}
+	img {
+		position: absolute;
+		margin: 130px 420px;
+		height: 600px;
+		width: 500px;
+	}
+	a{
+		color: green;
+		display: inline-block;
+		margin: 83px 313px;
+		text-decoration: none;
+		font-size: 10px;
+	}
+</style>
+</head>
+<body>
+	<img src="https://楽天スマホ.jp/wp-content/uploads/%E3%83%86%E3%83%AC%E3%83%93_1622730459.png"/>
+
+	<div class="fc">
+
+		<h1 class="fonte-externa">Cadastro de Produtos</h1>
+	</div>
+	<div class="form">
+		<form action="addprodutonew.jsp" method="post">
+			<table>
+				<tr>
+					<td><input type="text" name="nome" placeholder="Nome do Produto *"/></td>
+				</tr>
+				
+				<tr>
+					<td><input type="text" name="categoria" placeholder="Categoria"/></td>
+				</tr>
+				
+				<tr>
+					<td><input type="text" name="valor" placeholder="Valor *"/></td>
+				</tr>
+				
+				<tr>
+					<td><input type="text" name="quantidade" placeholder="Quantidade *"/></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+					<input type="submit" value="Cadastrar "></input></td>
+				</tr>
+			</table>
+	   			<a href="home.html"> VOLTAR </a>
+		</form>
+   	
+	  </div>
+	</body>
+</html>
